@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <filter id="Pause_Left" x="0" y="0" width="11" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.78"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Pause_Left-2" x="0" y="0" width="11" height="17" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#f0f" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Pause_Right" x="6" y="0" width="11" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.78"/>
+      <feComposite operator="in" in2="blur-3"/>
+    </filter>
+    <filter id="Pause_Right-2" x="6" y="0" width="11" height="17" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-4"/>
+      <feFlood flood-color="#f0f" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Pause_Icon" data-name="Pause Icon" transform="translate(3 6)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Pause_Left)">
+        <g id="Pause_Left-3" data-name="Pause Left" transform="translate(3 6)" fill="#fff" stroke="#f0f" stroke-width="1">
+          <rect width="5" height="11" rx="2" stroke="none"/>
+          <rect x="0.5" y="0.5" width="4" height="10" rx="1.5" fill="none"/>
+        </g>
+      </g>
+      <rect id="Pause_Left-4" data-name="Pause Left" width="5" height="11" rx="2" fill="#fff"/>
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Pause_Left-2)">
+        <rect id="Pause_Left-5" data-name="Pause Left" width="5" height="11" rx="2" transform="translate(3 6)" fill="#fff"/>
+      </g>
+      <g id="Pause_Left-6" data-name="Pause Left" fill="none" stroke="#f0f" stroke-width="1">
+        <rect width="5" height="11" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="4" height="10" rx="1.5" fill="none"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Pause_Right)">
+        <g id="Pause_Right-3" data-name="Pause Right" transform="translate(9 6)" fill="#fff" stroke="#f0f" stroke-width="1">
+          <rect width="5" height="11" rx="2" stroke="none"/>
+          <rect x="0.5" y="0.5" width="4" height="10" rx="1.5" fill="none"/>
+        </g>
+      </g>
+      <rect id="Pause_Right-4" data-name="Pause Right" width="5" height="11" rx="2" transform="translate(6)" fill="#fff"/>
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Pause_Right-2)">
+        <rect id="Pause_Right-5" data-name="Pause Right" width="5" height="11" rx="2" transform="translate(9 6)" fill="#fff"/>
+      </g>
+      <g id="Pause_Right-6" data-name="Pause Right" transform="translate(6)" fill="none" stroke="#f0f" stroke-width="1">
+        <rect width="5" height="11" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="4" height="10" rx="1.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

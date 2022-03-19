@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.684" height="17.827" viewBox="0 0 11.684 17.827">
+  <defs>
+    <filter id="Exit" x="0" y="0" width="11.684" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.78"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Door" x="2.234" y="0.008" width="9.45" height="17.818" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.78"/>
+      <feComposite operator="in" in2="blur-2"/>
+    </filter>
+    <filter id="Door-2" x="2.234" y="0.008" width="9.45" height="17.818" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-color="#00e5ff" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logout_Icon" data-name="Logout Icon" transform="translate(2.684 6)">
+    <g transform="matrix(1, 0, 0, 1, -2.68, -6)" filter="url(#Exit)">
+      <g id="Exit-2" data-name="Exit" transform="translate(3 6)" fill="#535353" stroke="#f0f" stroke-width="1">
+        <rect width="5.684" height="9" stroke="none"/>
+        <rect x="0.5" y="0.5" width="4.684" height="8" fill="none"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -2.68, -6)" filter="url(#Door)">
+        <g id="Door-3" data-name="Door" transform="translate(5.23 6.01)" fill="#fff">
+          <path d="M 0.4999976456165314 10.78308391571045 L 0.4999976456165314 3.10801362991333 L 2.950197696685791 1.06718635559082 L 2.950197696685791 8.837937355041504 L 0.4999976456165314 10.78308391571045 Z" stroke="none"/>
+          <path d="M 2.450197696685791 2.134372711181641 L 0.999997615814209 3.342277526855469 L 0.999997615814209 9.747748374938965 L 2.450197696685791 8.596473693847656 L 2.450197696685791 2.134372711181641 M 3.450197696685791 0 L 3.450197696685791 9.079400062561035 L -2.384185791015625e-06 11.81841945648193 L -2.384185791015625e-06 2.873749732971191 L 3.450197696685791 0 Z" stroke="none" fill="#00e5ff"/>
+        </g>
+      </g>
+      <g id="Door-4" data-name="Door" transform="translate(2.55 0.008)" fill="#fff">
+        <path d="M 0.4999976456165314 10.78308391571045 L 0.4999976456165314 3.10801362991333 L 2.950197696685791 1.06718635559082 L 2.950197696685791 8.837937355041504 L 0.4999976456165314 10.78308391571045 Z" stroke="none"/>
+        <path d="M 2.450197696685791 2.134372711181641 L 0.999997615814209 3.342277526855469 L 0.999997615814209 9.747748374938965 L 2.450197696685791 8.596473693847656 L 2.450197696685791 2.134372711181641 M 3.450197696685791 0 L 3.450197696685791 9.079400062561035 L -2.384185791015625e-06 11.81841945648193 L -2.384185791015625e-06 2.873749732971191 L 3.450197696685791 0 Z" stroke="none"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -2.68, -6)" filter="url(#Door-2)">
+        <g id="Door-5" data-name="Door" transform="translate(5.23 6.01)" fill="#fff">
+          <path d="M 0.4999976456165314 10.78308391571045 L 0.4999976456165314 3.10801362991333 L 2.950197696685791 1.06718635559082 L 2.950197696685791 8.837937355041504 L 0.4999976456165314 10.78308391571045 Z" stroke="none"/>
+          <path d="M 2.450197696685791 2.134372711181641 L 0.999997615814209 3.342277526855469 L 0.999997615814209 9.747748374938965 L 2.450197696685791 8.596473693847656 L 2.450197696685791 2.134372711181641 M 3.450197696685791 0 L 3.450197696685791 9.079400062561035 L -2.384185791015625e-06 11.81841945648193 L -2.384185791015625e-06 2.873749732971191 L 3.450197696685791 0 Z" stroke="none"/>
+        </g>
+      </g>
+      <g id="Door-6" data-name="Door" transform="translate(2.55 0.008)" fill="none">
+        <path d="M 0.4999976456165314 10.78308391571045 L 0.4999976456165314 3.10801362991333 L 2.950197696685791 1.06718635559082 L 2.950197696685791 8.837937355041504 L 0.4999976456165314 10.78308391571045 Z" stroke="none"/>
+        <path d="M 2.450197696685791 2.134372711181641 L 0.999997615814209 3.342277526855469 L 0.999997615814209 9.747748374938965 L 2.450197696685791 8.596473693847656 L 2.450197696685791 2.134372711181641 M 3.450197696685791 0 L 3.450197696685791 9.079400062561035 L -2.384185791015625e-06 11.81841945648193 L -2.384185791015625e-06 2.873749732971191 L 3.450197696685791 0 Z" stroke="none" fill="#00e5ff"/>
+      </g>
+    </g>
+    <line id="Door_Handle" data-name="Door Handle" y2="2" transform="translate(3.394 5.401)" fill="none" stroke="#00e5ff" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

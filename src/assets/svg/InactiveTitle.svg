@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="90" viewBox="0 0 436.337 90">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <filter id="No_UwU" x="0" y="6" width="110" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Zone_" x="344.202" y="17.345" width="92.136" height="61.314" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Coming_Soon_" x="121.601" y="7" width="196" height="82" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="TitleBarInactive" transform="translate(4.601)">
+    <rect id="TitleBarInactive-2" data-name="TitleBarInactive" width="428" height="67" transform="translate(0 6)" fill="rgba(0,0,0,0.4)"/>
+    <rect id="TitleBarInactive-3" data-name="TitleBarInactive" width="428" height="67" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#No_UwU)">
+      <text id="No_UwU-2" data-name="No UwU" transform="translate(9 43)" fill="#ff00d5" font-size="34" font-family="Atma-Medium, Atma" font-weight="500"><tspan x="0" y="0">N</tspan><tspan y="0" font-size="23">o </tspan><tspan y="0">U</tspan><tspan y="0" font-size="23">w</tspan><tspan y="0">U</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#Zone_)">
+      <text id="Zone_2" data-name="Zone  " transform="translate(353.24 40.35) rotate(0.24)" fill="aqua" font-size="23" font-family="ArchitectsDaughter-Regular, Architects Daughter"><tspan x="0" y="0" xml:space="preserve">Zone  </tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#Coming_Soon_)">
+      <text id="Coming_Soon_2" data-name="Coming Soon!" transform="translate(130.6 43)" fill="#fff" font-size="33" font-family="Atma-Medium, Atma" font-weight="500"><tspan x="0" y="0">Coming Soon!</tspan></text>
+    </g>
+  </g>
+</svg>

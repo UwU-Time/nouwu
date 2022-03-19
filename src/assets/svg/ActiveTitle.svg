@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="442.601" height="97" viewBox="0 0 442.601 97">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="ElevationActive" width="428" height="91" transform="translate(0)" fill="rgba(0,0,0,0.4)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="TitleBarActive" width="428" height="91" transform="translate(0)" fill="url(#radial-gradient)"/>
+    </clipPath>
+    <filter id="No_UwU" x="0" y="6" width="110" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Zone_" x="350.465" y="17.345" width="92.136" height="61.314" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Coming_Soon_" x="121.601" y="7" width="196" height="82" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a00" stop-opacity="0.769"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="ActiveTitleBar" transform="translate(4.601)">
+    <g id="TitleBarActive-2" data-name="TitleBarActive" transform="translate(-0.071 6)">
+      <g id="TitleBarActive-3" data-name="TitleBarActive" transform="translate(0.071)" clip-path="url(#clip-path)">
+        <path id="Elevation_Path" data-name="Elevation Path" d="M428.069,0H0V67.29H125.017a15.207,15.207,0,0,1,11.353,5.09l9.92,11.132A23.089,23.089,0,0,0,163.53,91.24H264.154a23.092,23.092,0,0,0,17.18-7.662l10.1-11.242a15.208,15.208,0,0,1,11.314-5.046H428.069Z" transform="translate(-0.069)" fill="rgba(0,0,0,0.4)"/>
+      </g>
+    </g>
+    <g id="TitleBarActive-4" data-name="TitleBarActive" transform="translate(-0.071)">
+      <g id="TitleBarActive-5" data-name="TitleBarActive" transform="translate(0.071)" clip-path="url(#clip-path-2)">
+        <path id="TitleBarTab" d="M428.069,0H0V67.29H125.017a15.207,15.207,0,0,1,11.353,5.09l9.92,11.132A23.089,23.089,0,0,0,163.53,91.24H264.154a23.092,23.092,0,0,0,17.18-7.662l10.1-11.242a15.208,15.208,0,0,1,11.314-5.046H428.069Z" transform="translate(-0.069)" fill="url(#radial-gradient)"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#No_UwU)">
+      <text id="No_UwU-2" data-name="No UwU" transform="translate(9 43)" fill="#ff00d5" font-size="34" font-family="Atma-Medium, Atma" font-weight="500"><tspan x="0" y="0">N</tspan><tspan y="0" font-size="23">o </tspan><tspan y="0">U</tspan><tspan y="0" font-size="23">w</tspan><tspan y="0">U</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#Zone_)">
+      <text id="Zone_2" data-name="Zone  " transform="translate(359.5 40.35) rotate(0.24)" fill="aqua" font-size="23" font-family="ArchitectsDaughter-Regular, Architects Daughter"><tspan x="0" y="0" xml:space="preserve">Zone  </tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -4.6, 0)" filter="url(#Coming_Soon_)">
+      <text id="Coming_Soon_2" data-name="Coming Soon!" transform="translate(130.6 43)" fill="#fff" font-size="33" font-family="Atma-Medium, Atma" font-weight="500"><tspan x="0" y="0">Coming Soon!</tspan></text>
+    </g>
+    <path id="SearchResults" d="M10,0H41A10,10,0,0,1,51,10V44a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(221 26)" fill="url(#linear-gradient)"/>
+    <g id="SearchBar" transform="translate(214 69)" fill="none" stroke="#9f0" stroke-width="1">
+      <rect width="65" height="16" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="64" height="15" rx="7.5" fill="none"/>
+    </g>
+    <text id="Home" transform="translate(162 82)" fill="#fff" font-size="15" font-family="Atma-Medium, Atma" font-weight="500"><tspan x="0" y="0">Home</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.591" height="17" viewBox="0 0 18.591 17">
+  <defs>
+    <filter id="Replay_Icon" x="0" y="0" width="18.591" height="17" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.78"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Replay_Icon-2" x="0" y="0" width="18.591" height="17" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#f0f" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Replay_Icon-3" data-name="Replay Icon" transform="translate(3 6)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Replay_Icon)">
+        <path id="Replay_Icon-4" data-name="Replay Icon" d="M6.3,0c3.477,0,6.3,2.462,6.3,5.5S9.773,11,6.3,11c-1.312,0,10.84-6.24.869-9.342-.516-.072-1.693.108-1.486.162-.253-.008-.467.184-.7.289-.578.343-.856.841-.888.721C3.015,3.84,3.379,6.064,3.262,5.7c-.032-.1,1.4.486,1.321.361-.145-.227-2.725,2.289-2.89,1.966C1.367,7.387,0,6.3,0,5.5c0-.076,1.791.122,1.8,0C1.93,2.615,2.906,0,6.3,0Z" transform="translate(3 6)" fill="#f0f"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -3, -6)" filter="url(#Replay_Icon-2)">
+        <path id="Replay_Icon-5" data-name="Replay Icon" d="M6.3,0c3.477,0,6.3,2.462,6.3,5.5S9.773,11,6.3,11c-1.312,0,10.84-6.24.869-9.342-.516-.072-1.693.108-1.486.162-.253-.008-.467.184-.7.289-.578.343-.856.841-.888.721C3.015,3.84,3.379,6.064,3.262,5.7c-.032-.1,1.4.486,1.321.361-.145-.227-2.725,2.289-2.89,1.966C1.367,7.387,0,6.3,0,5.5c0-.076,1.791.122,1.8,0C1.93,2.615,2.906,0,6.3,0Z" transform="translate(3 6)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

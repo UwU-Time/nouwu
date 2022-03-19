@@ -1,0 +1,9 @@
+.nav-menu {
+    width: 0; /* <--- width to 0 */
+    overflow: hidden;
+    transition: ease width 0.3s; /* <--- ease in */
+}
+.nav-menu-active {
+    width: 100px; /* <--- set width percentage will not ease */
+    transition: ease width 0.3s; /* <--- ease out */
+}
