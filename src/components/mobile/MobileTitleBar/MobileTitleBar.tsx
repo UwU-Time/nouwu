@@ -7,7 +7,7 @@ import './MobileTitleBar.scss';
 import ReactPlayer from "react-player";
 
   
-  export default function MobileTitle(props) {
+  export default function MobileTitle() {
 
 
     return (

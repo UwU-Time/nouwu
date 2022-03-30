@@ -1,19 +1,32 @@
 import * as React from 'react';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import './App.scss';
 
-import { ViewProvider } from './contexts/ViewContext';
 import MobileConsole from './components/mobile/MobileConsole/MobileConsole';
 import MovieHolder from './components/mobile/MovieHolder/MovieHolder';
 import MobileTitle from './components/mobile/MobileTitleBar/MobileTitleBar';
+import ReactPlayer from 'react-player';
+import usePictureInPicture, { ExtendedHTMLVideoElement } from 'react-use-pip';
 
+interface Props {
+  videoRef: React.RefObject<ReactPlayer>;
+  usePictureInPicture: () => void;
+}
 
-function App() {
+function App(): JSX.Element {
+  // handle click for picture in picture in movie holder
+  const [isPictureInPicture, setIsPictureInPicture] = useState(false);
 
+  const videoRef = useRef<ReactPlayer>(null);
+
+  const usePictureInPicture = () => {
+    if (videoRef.current) {
+      setIsPictureInPicture(!isPictureInPicture);
+    }
+  } 
   
   
   return (
-    <ViewProvider>
       <div 
         className="main"
         style={{
@@ -24,12 +37,11 @@ function App() {
         }}
       >
         <MobileTitle />
-        <MovieHolder />
-        <MobileConsole />
+        <MovieHolder videoRef={videoRef} isPictureInPicture/>
+        <MobileConsole usePictureInPicture={usePictureInPicture}/>
         {/* <CSSTitleBar />
         <VideoChannel /> */}
       </div>
-    </ViewProvider>
   );
 }
 
