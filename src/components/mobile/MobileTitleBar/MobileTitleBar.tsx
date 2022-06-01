@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import finalhome from '../../../assets/video/finalhome.mp4';
 import './MobileTitleBar.scss';
-import ReactPlayer from "react-player";
 
   
   export default function MobileTitle() {
