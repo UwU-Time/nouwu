@@ -1,0 +1,80 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/nouwu/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/nouwu",
+        "index": "apps/nouwu/src/index.html",
+        "baseHref": "/",
+        "main": "apps/nouwu/src/main.tsx",
+        "polyfills": "apps/nouwu/src/polyfills.ts",
+        "tsConfig": "apps/nouwu/tsconfig.app.json",
+        "assets": ["apps/nouwu/src/favicon.ico", "apps/nouwu/src/assets"],
+        "styles": ["apps/nouwu/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/nouwu/src/environments/environment.ts",
+              "with": "apps/nouwu/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nouwu:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nouwu:build:development"
+        },
+        "production": {
+          "buildTarget": "nouwu:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nouwu/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/nouwu"],
+      "options": {
+        "jestConfig": "apps/nouwu/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
