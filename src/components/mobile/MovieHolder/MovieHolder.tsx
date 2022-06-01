@@ -7,8 +7,12 @@ import { useScreen } from 'usehooks-ts';
 
 import finalhome from '../../../assets/video/finalhome.mp4';
 
+interface Props {
+    videoRef: React.RefObject<ReactPlayer>;
+    isPictureInPicture: boolean;
+}
 
-export default function MovieHolder(): JSX.Element {
+export default function MovieHolder({ videoRef, isPictureInPicture }: Props): JSX.Element {
      
     const screen = useScreen();
     const [isPlaying, setIsPlaying] = useState(false);
@@ -40,6 +44,8 @@ export default function MovieHolder(): JSX.Element {
     return (
         <motion.div>
             <ReactPlayer
+                pip={isPictureInPicture ? true : false}
+                ref={videoRef}
                 id={"mobi-react-player"}
                 className="mobile-rp"
                 url={finalhome} 
